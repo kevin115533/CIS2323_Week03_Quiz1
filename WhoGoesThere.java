@@ -6,20 +6,18 @@ public class WhoGoesThere {
 		String fName, sName;
 		int age;
 		
-		Scanner Input1 = new Scanner(System.in);
-		Scanner Input2 = new Scanner(System.in);
-		Scanner Input3 = new Scanner(System.in);
-		
+		Scanner Input = new Scanner(System.in);
+
 		System.out.print("What is your first name: ");
-		fName = Input1.nextLine();
+		fName = Input.nextLine();
 		
 		System.out.print("What is your last name: ");
-		sName = Input2.nextLine();
+		sName = Input.nextLine();
 		
 		System.out.print("What is your age: ");
-		age = Input3.nextInt();
+		age = Input.nextInt();
 		
-		System.out.println("As long as you are over the age of " + age + " then ");
+		System.out.println("As long as you are over the age of " + (age - 10) + " then ");
 		System.out.println("You are free to pass " + fName + " " + sName);
 		
 	}
